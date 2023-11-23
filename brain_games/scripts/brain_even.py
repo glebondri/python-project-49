@@ -1,8 +1,7 @@
-from brain_games import user, logic, randomizer
+from brain_games import logic, randomizer
 
 
 def main():
-    name = user.ask_for_name()
 
     qna_pair = {}  # dict of 'questions 'n' answers'
 
@@ -12,5 +11,5 @@ def main():
 
         qna_pair[str(question)] = answer
 
-    logic.ask_question(username=name, qna=qna_pair,
+    logic.ask_question(qna=qna_pair,
                        title='Answer "yes" if the number is even, otherwise answer "no".')

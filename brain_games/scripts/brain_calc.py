@@ -1,9 +1,8 @@
-from brain_games import user, logic
+from brain_games import logic
 from random import randint, choice
 
 
 def main():
-    name = user.ask_for_name()
 
     qna_pair = {}  # dict of 'questions 'n' answers'
 
@@ -17,7 +16,9 @@ def main():
 
         qna_pair[str(question)] = str(answer)
 
-    logic.ask_question(username=name, qna=qna_pair,
+    logic.ask_question(qna=qna_pair,
                        title='What is the result of the expression?')
+
+
 if __name__ == '__main__':
     main()

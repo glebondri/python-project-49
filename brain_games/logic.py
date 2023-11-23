@@ -8,23 +8,30 @@
 #     print('Correct!')
 #
 #     return True
+from brain_games import user
 
 
-def ask_question(title, username, qna):
+def ask_question(title, qna):
 
     def unpack(dictonary, index):
         return index, dictonary[index]
 
-    print(title)
+    username = user.ask_for_name()
 
-    for q in qna:
-        question, answer = unpack(qna, q)
-        user_answer = input(f'Question: {question}\nYour answer: ')
+    if len(qna) > 1:  # is there is anything to ask
+        print(title)
 
-        if user_answer != answer:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'.\nLet's try again, {username}!")
-            exit(0)
+        for q in qna:
+            question, answer = unpack(qna, q)
+            user_answer = input(f'Question: {question}\nYour answer: ')
 
-        print('Correct!')
+            if user_answer != answer:
+                print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'.\nLet's try again, {username}!")
+                exit(0)
 
-    print(f'Congratulations, {username}!')
+            print('Correct!')
+
+        print(f'Congratulations, {username}!')
+
+    else:
+        print("I don't know what to ask you!")
