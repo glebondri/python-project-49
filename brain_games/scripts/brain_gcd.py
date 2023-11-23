@@ -1,6 +1,6 @@
 from brain_games import logic
 from math import gcd
-from random import randint
+from random import randrange
 
 
 def main():
@@ -8,8 +8,8 @@ def main():
     qna_pair = {}
 
     for i in range(3):
-        first = randint(1, 50)
-        second = randint(1, 50)
+        first = randrange(1, 50, 2)
+        second = randrange(1, 50, 2)
 
         question = f'{str(first)} {str(second)}'
         answer = gcd(first, second)

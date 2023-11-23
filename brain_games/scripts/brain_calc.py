@@ -18,7 +18,3 @@ def main():
 
     logic.ask_question(qna=qna_pair,
                        title='What is the result of the expression?')
-
-
-if __name__ == '__main__':
-    main()
