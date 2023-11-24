@@ -1,13 +1,3 @@
-# def ask_question(question, answer):
-#     user_answer = input(f'Question: {question}\nYour answer: ')
-#
-#     if user_answer != answer:
-#         print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'.")
-#         return None
-#
-#     print('Correct!')
-#
-#     return True
 from brain_games import user
 
 
@@ -18,7 +8,7 @@ def ask_question(title, qna):
 
     username = user.ask_for_name()
 
-    if len(qna) > 1:  # is there is anything to ask
+    if len(qna) > 1:  # is there is anything to ask?
         print(title)
 
         for q in qna:
