@@ -14,4 +14,4 @@ def main():
         qna_pair[str(question)] = answer
 
     logic.ask_question(qna=qna_pair,
-                       title=BRAIN.YES_OR_NO.format('prime'))
+                       title=BRAIN.PRIME)
