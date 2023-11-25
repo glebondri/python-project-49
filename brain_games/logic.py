@@ -1,4 +1,5 @@
 from brain_games import user
+from brain_games.titles import QUESTION, WRONG_ANSWER, TRY_AGAIN
 
 
 def ask_question(title, qna):
@@ -13,10 +14,11 @@ def ask_question(title, qna):
 
         for q in qna:
             question, answer = unpack(qna, q)
-            user_answer = input(f'Question: {question}\nYour answer: ')
+            user_answer = input(QUESTION.format(question))
 
             if user_answer != answer:
-                print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'.\nLet's try again, {username}!")
+                print(WRONG_ANSWER.format(user_answer, answer))
+                print(TRY_AGAIN.format(username))
                 exit(0)
 
             print('Correct!')

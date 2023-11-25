@@ -1,4 +1,5 @@
 from brain_games import logic
+from brain_games.titles import BRAIN
 from math import gcd
 from random import randrange
 
@@ -17,4 +18,4 @@ def main():
         qna_pair[str(question)] = str(answer)
 
     logic.ask_question(qna=qna_pair,
-                       title='Find the greatest common divisor of given numbers.')
+                       title=BRAIN.GCD)

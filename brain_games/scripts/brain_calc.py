@@ -1,4 +1,5 @@
 from brain_games import logic
+from brain_games.titles import BRAIN
 from random import randint, choice
 
 
@@ -17,4 +18,4 @@ def main():
         qna_pair[str(question)] = str(answer)
 
     logic.ask_question(qna=qna_pair,
-                       title='What is the result of the expression?')
+                       title=BRAIN.CALC)

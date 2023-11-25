@@ -16,7 +16,8 @@ def main():
 
         missing_number = choice(sequence)
 
-        question = ' '.join((str(n) if n != missing_number else '..') for n in sequence)  # kinda messy ngl
+        question = ' '.join(
+            (str(n) if n != missing_number else '..') for n in sequence)
         answer = missing_number
 
         qna_pair[str(question)] = str(answer)
