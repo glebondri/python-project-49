@@ -1,5 +1,4 @@
 from brain_games import logic
-from math import gcd
 from random import randint, choice
 
 

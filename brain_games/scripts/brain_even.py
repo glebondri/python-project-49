@@ -1,4 +1,5 @@
-from brain_games import logic, randomizer
+from brain_games import logic
+from brain_games.utility import randomizer
 
 
 def main():
