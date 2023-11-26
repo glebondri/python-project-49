@@ -1,18 +1,20 @@
 from brain_games import logic
+from brain_games import titles
 from random import randint, choice
 
 
 def main():
 
-    qna_pair = {}
+    qna_pair = {}  # dict of 'questions 'n' answers'
 
     for i in range(3):
         random_number = randint(1, 15)
         step = randint(2, 5)
 
         sequence = []
-        for n in range(10):
-            sequence += [random_number + step * n]
+        sequence_length = 10
+        for index in range(sequence_length):
+            sequence += [random_number + step * index]
 
         missing_number = choice(sequence)
 
@@ -22,5 +24,5 @@ def main():
 
         qna_pair[str(question)] = str(answer)
 
-    logic.ask_question(qna=qna_pair,
-                       title='What number is missing in the progression?')
+    logic.ask_questions(qna=qna_pair,
+                        title=titles.BRAIN.PROGRESSION)

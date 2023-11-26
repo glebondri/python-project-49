@@ -1,5 +1,5 @@
 from brain_games import logic
-from brain_games.titles import BRAIN
+from brain_games import titles
 from brain_games.utility import randomizer, prime
 
 
@@ -13,5 +13,5 @@ def main():
 
         qna_pair[str(question)] = answer
 
-    logic.ask_question(qna=qna_pair,
-                       title=BRAIN.PRIME)
+    logic.ask_questions(qna=qna_pair,
+                        title=titles.BRAIN.PRIME)

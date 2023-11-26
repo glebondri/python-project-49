@@ -2,7 +2,7 @@ from brain_games import user
 from brain_games.titles import QUESTION, WRONG_ANSWER, TRY_AGAIN
 
 
-def ask_question(title, qna):
+def ask_questions(title, qna):
 
     def unpack(dictonary, index):
         return index, dictonary[index]
