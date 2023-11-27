@@ -3,7 +3,7 @@ from random import randint
 memory = []
 
 
-def unique(first, last):
+def unique(first, last):  # used to generate unique random number
     global memory
 
     random_number = randint(first, last)
