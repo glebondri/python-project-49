@@ -22,7 +22,7 @@ def main():
             (str(n) if n != missing_number else '..') for n in sequence)
         answer = missing_number
 
-        qna_pair[str(question)] = str(answer)
+        qna_pair[question] = answer
 
     logic.ask_questions(qna=qna_pair,
                         title=titles.BRAIN.PROGRESSION)

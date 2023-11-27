@@ -15,7 +15,7 @@ def main():
         question = f'{str(first)} {str(second)}'
         answer = greatest_common_divisor(first, second)
 
-        qna_pair[str(question)] = str(answer)
+        qna_pair[question] = answer
 
     logic.ask_questions(qna=qna_pair,
                         title=titles.BRAIN.GCD)

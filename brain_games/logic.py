@@ -14,9 +14,9 @@ def ask_questions(title, qna):
 
         for q in qna:
             question, answer = unpack(qna, q)
-            user_answer = input(QUESTION.format(question))
+            user_answer = input(QUESTION.format(str(question)))
 
-            if user_answer != answer:
+            if str(user_answer) != str(answer):
                 print(WRONG_ANSWER.format(user_answer, answer))
                 print(TRY_AGAIN.format(username))
                 exit(0)

@@ -11,7 +11,7 @@ def main():
         question = randomizer.unique(1, 10)
         answer = 'yes' if question % 2 == 0 else 'no'
 
-        qna_pair[str(question)] = answer
+        qna_pair[question] = answer
 
     logic.ask_questions(qna=qna_pair,
                         title=titles.BRAIN.EVEN)

@@ -16,7 +16,7 @@ def main():
         question = f'{str(first_number)} {operator} {str(second_number)}'
         answer = eval(question)
 
-        qna_pair[str(question)] = str(answer)
+        qna_pair[question] = answer
 
     logic.ask_questions(qna=qna_pair,
                         title=titles.BRAIN.CALC)
