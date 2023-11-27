@@ -15,7 +15,7 @@
  - Python (^3.10)
  - Poetry
 
-## [Установка:](https://asciinema.org/a/xyKD1e9b4TrqMcaP4qkFPY1n9)
+## Установка [(Asciinema)](https://asciinema.org/a/xyKD1e9b4TrqMcaP4qkFPY1n9):
     $ git clone https://github.com/glebondri/python-project-49
     $ cd python-project-49
     $ make build
@@ -23,7 +23,7 @@
 
 ##
 ### `Even or Odd`
-[![asciicast](https://asciinema.org/a/3B6vUU52kx9dsiKSNcpd6MFlo.svg)](https://asciinema.org/a/3B6vUU52kx9dsiKSNcpd6MFlo)
+[![asciicast](https://asciinema.org/a/HCCxG9NLzsXW9B0T9X4xYOkYt.svg)](https://asciinema.org/a/HCCxG9NLzsXW9B0T9X4xYOkYt)
 
 ### `Calculator`
 [![asciicast](https://asciinema.org/a/76Gg7m8hykaB6O0X3GUopT7ND.svg)](https://asciinema.org/a/76Gg7m8hykaB6O0X3GUopT7ND)
