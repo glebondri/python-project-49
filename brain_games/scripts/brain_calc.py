@@ -1,7 +1,7 @@
 from brain_games import logic
 from brain_games import titles
 from brain_games.utility import randomizer
-from random import randint, choice
+from random import choice
 
 
 def main():
