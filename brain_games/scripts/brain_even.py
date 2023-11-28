@@ -8,7 +8,7 @@ def main():
     qna_pair = {}  # dict of 'questions 'n' answers'
 
     for i in range(3):
-        question = randomizer.unique(1, 10)
+        question = randomizer.unique(1, 6)
         answer = 'yes' if question % 2 == 0 else 'no'
 
         qna_pair[question] = answer
