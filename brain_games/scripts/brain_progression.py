@@ -1,6 +1,7 @@
 from brain_games import logic
 from brain_games import titles
-from random import randint, choice
+from brain_games.utility import randomizer
+from random import choice
 
 
 def main():
@@ -8,8 +9,8 @@ def main():
     qna_pair = {}  # dict of 'questions 'n' answers'
 
     for i in range(3):
-        random_number = randint(1, 15)
-        step = randint(2, 5)
+        random_number = randomizer.unique(1, 15)
+        step = randomizer.unique(2, 5)
 
         sequence = []
         sequence_length = 10
