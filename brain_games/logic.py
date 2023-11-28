@@ -4,8 +4,8 @@ from brain_games.titles import QUESTION, WRONG_ANSWER, TRY_AGAIN
 
 def ask_questions(title, qna):
 
-    def unpack(dictonary, index):
-        return index, dictonary[index]
+    def unpack(dictionary, index):
+        return index, dictionary[index]
 
     username = user.ask_for_name()
 
