@@ -1,7 +1,7 @@
 from brain_games import logic
 from brain_games import titles
 from brain_games.utility import randomizer
-from random import choice
+from random import randint, choice
 
 
 def main():
@@ -10,7 +10,7 @@ def main():
 
     for i in range(3):
         random_number = randomizer.unique(1, 15)
-        step = randomizer.unique(2, 5)
+        step = randint(2, 5)
 
         sequence = []
         sequence_length = 10
