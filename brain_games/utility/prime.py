@@ -1,7 +1,7 @@
 def is_prime_number(number):
 
     last_index = number + 1
-    prime_numbers = [i + 1 for i in range(1, last_index)]
+    prime_numbers = list(range(2, last_index + 1))
 
     '''
      2  3  4  5  6  7  8  9  10
@@ -15,6 +15,7 @@ def is_prime_number(number):
               ->     ...
         '''
         if index in prime_numbers:
+
             for n in prime_numbers:
                 '''
                 "is number in list is multiple to given number?"
@@ -32,5 +33,5 @@ def is_prime_number(number):
 
 
 if __name__ == '__main__':
-    print(is_prime_number(8))
+    print(is_prime_number(7))
     print(is_prime_number(12))
