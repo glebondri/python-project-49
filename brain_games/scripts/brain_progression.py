@@ -26,4 +26,4 @@ def main():
         qna_pair[question] = answer
 
     logic.ask_questions(qna=qna_pair,
-                        title=titles.BRAIN.PROGRESSION)
+                        title=titles.PROGRESSION)
