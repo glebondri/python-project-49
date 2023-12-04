@@ -2,16 +2,16 @@ from brain_games import user
 from brain_games.titles import QUESTION, WRONG_ANSWER, TRY_AGAIN
 
 
-def ask_to_answer(qna):
+def ask_to_answer(game):
     print('Welcome to the Brain Games!')
 
     username = user.ask_for_name()
     print(f'Hello, {username}!')
 
-    print(qna.description)
+    print(game.description)
 
     for attempt in range(3):
-        question, answer = qna.new()
+        question, answer = game.get_qna_pair()
 
         user_answer = input(QUESTION.format(str(question)))
 
