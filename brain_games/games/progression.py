@@ -1,5 +1,6 @@
 from random import randint, choice
 
+
 description = 'What number is missing in the progression?'
 
 
