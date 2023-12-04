@@ -1,11 +1,11 @@
-def operate(first_number, second_number, operator):
+def operate(a, b, operator):
     match operator:
         case '+':
-            result = first_number + second_number
+            result = a + b
         case '-':
-            result = first_number - second_number
+            result = a - b
         case '*':
-            result = first_number * second_number
+            result = a * b
         case _:
             print('Unsupported operation!')
             return None
