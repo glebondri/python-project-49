@@ -14,7 +14,6 @@ def new():
                                 operator)
 
     question = f'{str(first_number)} {operator} {str(second_number)}'
-    answer = result
-    #  eval('__import__("os").system("echo hello, hexlet!")')
+    answer = result  # eval('__import__("os").system("echo hello, hexlet!")')
 
     return question, answer
