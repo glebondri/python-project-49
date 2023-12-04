@@ -4,7 +4,7 @@ from random import randint, choice
 description = 'What is the result of the expression?'
 
 
-def new():
+def get_qna_pair():
     first_number = randint(1, 30)
     second_number = randint(1, 30)
     operator = choice(['+', '-', '*'])

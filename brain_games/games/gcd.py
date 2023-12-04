@@ -4,7 +4,7 @@ from math import gcd as greatest_common_divisor
 description = 'Find the greatest common divisor of given numbers.'
 
 
-def new():
+def get_qna_pair():
     first_number = randint(1, 50)
     second_number = randint(1, 50)
 

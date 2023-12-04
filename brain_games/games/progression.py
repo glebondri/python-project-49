@@ -4,7 +4,7 @@ from random import randint, choice
 description = 'What number is missing in the progression?'
 
 
-def new():
+def get_qna_pair():
     random_number = randint(1, 15)
     step = randint(2, 5)
 
