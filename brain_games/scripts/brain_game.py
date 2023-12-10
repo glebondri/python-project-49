@@ -1,11 +1,11 @@
 #!usr/bin/env python3
 
-from ..cli import welcome_user
+from brain_games import user
 
 
 def main():
     print('Welcome to the Brain Games!')
 
-    username = welcome_user()
+    username = user.ask_for_name()
 
     print(f'Hello, {username}!')
