@@ -30,8 +30,3 @@ def is_prime_number(number):
                     prime_numbers.remove(n)
 
     return number in prime_numbers
-
-
-if __name__ == '__main__':
-    print(is_prime_number(7))
-    print(is_prime_number(12))
