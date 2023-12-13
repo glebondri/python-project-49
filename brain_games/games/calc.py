@@ -1,10 +1,12 @@
 from brain_games.utility import calculator
 from random import randint, choice
+from typing import Tuple
+
 
 description = 'What is the result of the expression?'
 
 
-def get_qna_pair():
+def get_qna_pair() -> Tuple:
     first_number = randint(1, 30)
     second_number = randint(1, 30)
     operator = choice(['+', '-', '*'])

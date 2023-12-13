@@ -1,10 +1,11 @@
 from random import randint, choice
+from typing import Tuple
 
 
 description = 'What number is missing in the progression?'
 
 
-def get_qna_pair():
+def get_qna_pair() -> Tuple:
     random_number = randint(1, 15)
     step = randint(2, 5)
 

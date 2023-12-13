@@ -1,10 +1,11 @@
 from random import randint
 from math import gcd as greatest_common_divisor
+from typing import Tuple
 
 description = 'Find the greatest common divisor of given numbers.'
 
 
-def get_qna_pair():
+def get_qna_pair() -> Tuple:
     first_number = randint(1, 50)
     second_number = randint(1, 50)
 
