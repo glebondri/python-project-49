@@ -1,8 +1,12 @@
 from brain_games import user
 from brain_games.titles import QUESTION, WRONG_ANSWER, TRY_AGAIN
+from types import ModuleType
 
 
-def ask_to_answer(game):
+def ask_to_answer(game: ModuleType) -> None:
+    """Asks the user to answer three generated questions
+    :param game: Module with game description and Q&A generation function"""
+
     print('Welcome to the Brain Games!')
 
     username = user.ask_for_name()
