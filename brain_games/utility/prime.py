@@ -1,4 +1,7 @@
-def is_prime_number(number):
+def is_prime_number(number: int) -> bool:
+    """Returns whether a given number prime or not
+    :param number:
+    :return: Whether a given number prime or not"""
 
     last_index = number + 1
     prime_numbers = list(range(2, last_index + 1))
