@@ -1,7 +1,4 @@
-from typing import Optional
-
-
-def operate(a: int, b: int, operator: str) -> Optional[int]:
+def operate(a: int, b: int, operator: str) -> int | None:
     """Arithmetic operation over two numbers
     :param a: First number
     :param b: Second number
