@@ -5,7 +5,10 @@ from typing import Tuple
 description = 'What number is missing in the progression?'
 
 
-def get_qna_pair() -> Tuple:
+def get_qna_pair() -> Tuple[str, str]:
+    """Generates an arithmetic sequence with a missing number in
+    User needs to find out """
+
     random_number = randint(1, 15)
     step = randint(2, 5)
 
@@ -17,7 +20,7 @@ def get_qna_pair() -> Tuple:
     missing_number = choice(sequence)
 
     question = ' '.join(
-        (str(n) if n != missing_number else '..') for n in sequence)
+        list(map(lambda x: str(x) if x != missing_number else '..', sequence)))
     answer = missing_number
 
-    return question, answer
+    return question, str(answer)
