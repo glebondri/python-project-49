@@ -19,7 +19,7 @@ def ask_to_answer(game: ModuleType) -> None:
 
         user_answer = input(QUESTION.format(str(question)))
 
-        if str(user_answer) != str(answer):
+        if user_answer != answer:
             print(WRONG_ANSWER.format(user_answer, answer))
             print(TRY_AGAIN.format(username))
             exit(0)
