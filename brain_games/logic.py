@@ -17,7 +17,7 @@ def ask_to_answer(game: ModuleType) -> None:
     for attempt in range(3):
         question, answer = game.get_qna_pair()
 
-        user_answer = input(QUESTION.format(str(question)))
+        user_answer = input(QUESTION.format(question))
 
         if user_answer != answer:
             print(WRONG_ANSWER.format(user_answer, answer))
